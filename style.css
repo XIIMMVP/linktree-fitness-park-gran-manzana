@@ -181,6 +181,21 @@ body {
     margin-bottom: 1.5rem;
 }
 
+.app-icon-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    margin-bottom: 0.8rem;
+}
+
+.app-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
 .app-badges-label {
     font-family: var(--font-body);
     font-size: 0.65rem;

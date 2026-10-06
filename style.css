@@ -15,8 +15,8 @@
 }
 
 :root {
-    --bg-color-top: #1a1b1d;
-    --bg-color-bottom: #212225;
+    --bg-color-top: #111113;
+    --bg-color-bottom: #1a1b1d;
     --text-color: #ffffff;
     --primary-yellow: #FFD600;
     --btn-dark: #2a2a2a;
@@ -34,8 +34,12 @@
 html, body {
     height: 100%;
     width: 100%;
-    background: linear-gradient(180deg, rgba(20, 22, 25, 0.8) 0%, rgba(33, 34, 37, 1) 70%),
-                url('https://d1nwmbf35sn2fq.cloudfront.net/s3fs-public/styles/teaser_space_big_large_x1/public/bow/spaces/26/space_a89e7247ceaba1a7b9e439492d79ca13.jpg') no-repeat center center / cover;
+    background-color: #111113;
+    background-image: linear-gradient(180deg, rgba(17, 17, 19, 0.75) 0%, rgba(26, 27, 29, 1) 70%),
+                url('https://d1nwmbf35sn2fq.cloudfront.net/s3fs-public/styles/teaser_space_big_large_x1/public/bow/spaces/26/space_a89e7247ceaba1a7b9e439492d79ca13.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
     background-attachment: fixed;
     color: var(--text-color);
     font-family: var(--font-body);
@@ -46,7 +50,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
+    padding: 0;
+    margin: 0;
 }
 
 .container {
@@ -59,6 +64,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 1rem;
     animation: fadeIn 0.8s ease-out;
 }
 
@@ -84,7 +90,7 @@ body {
 
 .title {
     font-family: var(--font-heading);
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-style: italic;
     font-weight: 900;
     text-transform: uppercase;
@@ -94,6 +100,18 @@ body {
     margin-bottom: 1.5rem;
     color: #ffffff;
     text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+
+.subtitle {
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    font-style: italic;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--primary-yellow);
+    margin-bottom: 0.3rem;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
 }
 
 .links {
@@ -252,7 +270,8 @@ body {
 
 @media (max-height: 700px) {
     .logo { width: 180px; }
-    .title { font-size: 3rem; margin-bottom: 1rem; }
+    .subtitle { font-size: 1.1rem; }
+    .title { font-size: 2.8rem; margin-bottom: 1rem; }
     .header { margin-bottom: 1.5rem; }
     .link-btn { padding: 1rem 1.5rem; font-size: 1.5rem; }
     .outline-btn { font-size: 0.9rem; }
